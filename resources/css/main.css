@@ -1,0 +1,48 @@
+// most common
+
+.eef5b2-background{
+    -fx-background-color:#eef5b2;
+}
+
+.white{
+    -fx-background-color:#fff;
+}
+
+// specifics
+
+.hbox-cards{
+    -fx-background-color: #eef5b2;
+}
+
+.borderPane-cards{
+   -fx-background-color: #3fc5f0;
+}
+
+
+.textarea-cards{
+    -fx-background-color: #fff; -fx-padding: 30 30 30 30;
+}
+
+.white-button{
+    -fx-background-color:#fff;
+}
+
+
+.deckComponent{
+    -fx-background-color: #6decb9;
+    -fx-border-width: 25 15 15 15;
+    -fx-border-color: #fff;
+}
+
+.color-33fc5f0{
+    -fx-background-color: #3fc5f0;
+}
+
+.scrollpane{
+    -fx-background-color: #49eb34;
+}
+
+.flowpane{
+    -fx-min-height: 400;
+}
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane stylesheets="/css/main.css" prefHeight="426.0" prefWidth="667.0" styleClass="borderPane-cards" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.CardsViewController">
+   <top>
+      <HBox styleClass="hbox-cards" alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnBack" mnemonicParsing="false" style="-fx-background-color: #eef5b2;" styleClass="eef5b2-background">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnCreate" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="GRAPHIC_ONLY" defaultButton="true" focusTraversable="false" mnemonicParsing="false" scaleShape="false" styleClass="eef5b2-background" textOverrun="CLIP">
+               <graphic>
+                  <ImageView nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Add.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnEdit" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="GRAPHIC_ONLY" defaultButton="true" focusTraversable="false" mnemonicParsing="false" scaleShape="false" styleClass="eef5b2-background" textOverrun="CLIP">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Symbol%20144%20–%202.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnRemove" alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="GRAPHIC_ONLY" defaultButton="true" focusTraversable="false" mnemonicParsing="false" prefHeight="26.0" prefWidth="33.0" scaleShape="false" styleClass="eef5b2-background" textOverrun="CLIP">
+               <graphic>
+                  <ImageView pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/remove@2x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="40.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="cardTextArea" styleClass="textarea-cards" disable="true" prefHeight="180.0" prefWidth="500.0" StackPane.alignment="CENTER_RIGHT">
+               <StackPane.margin>
+                  <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+               </StackPane.margin>
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextArea>
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnPrevious" mnemonicParsing="false" scaleX="2.0" scaleY="2.0" styleClass="eef5b2-background">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/previous.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnFlip" mnemonicParsing="false" styleClass="eef5b2-background">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/flip@2x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnNext" mnemonicParsing="false" scaleX="2.0" scaleY="2.0" styleClass="eef5b2-background">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/next.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

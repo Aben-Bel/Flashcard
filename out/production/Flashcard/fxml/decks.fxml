@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane stylesheets="/css/main.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="eef5b2-background" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.FlashcardViewController">
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" styleClass="scrollpane" BorderPane.alignment="CENTER">
+         <content>
+            <FlowPane fx:id="flowpaneDeckList" prefWrapLength="730.0" styleClass="white, flowpane">
+            </FlowPane>
+         </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="color-33fc5f0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnCreate" mnemonicParsing="false" styleClass="white">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Add@2x.png" />
+                     </image></ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="50.0" top="30.0" />
+               </HBox.margin></Button>
+         </children></HBox>
+   </top>
+</BorderPane>
